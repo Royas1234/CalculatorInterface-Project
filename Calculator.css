@@ -1,0 +1,64 @@
+body{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+#container{
+    margin-left: 450px;
+    margin-right: 450px;
+    width: 900px;
+}
+#cal-body{
+    background-color: #ddd;
+    width: 350px;
+    height: 500px;
+    border: 2px solid silver;
+    
+
+}
+#cal-display{
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    border: 2px solid silver;
+    margin: 20px 20px 5px 20px;
+}
+table{
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 30px 30px 25px;
+    border-spacing: 5px;
+    height:100%
+}
+tr{
+   
+}
+
+td {
+    border: 1px solid #999;
+    width:40px;
+    height:40px;
+    text-align: center;
+    font-size: large;
+}
+.Col-1{
+    background-color:#bbb;
+}
+td.Col-2{
+    background-color: yellow;
+}
+.Col-3{
+    background-color: white;
+}
+#footer{
+    text-align: right;
+    padding: 1px 5px 5px 1px; 
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+.Soup{
+    color: red;
+}
