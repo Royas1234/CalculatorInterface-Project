@@ -62,3 +62,24 @@ td.Col-2{
 .Soup{
     color: red;
 }
+.btn-S1{
+    background-color:#bbb;
+    padding: 5px 6px;
+    font-size: medium;
+    font-weight: bold;
+    border-color: #999;
+}
+.btn-S2{
+    background-color: yellow;
+    padding: 5px 6px;
+    font-size: medium;
+    font-weight: bold;
+    border-color: yellow;
+}
+.btn-S3{
+    background-color: white;
+    padding: 5px 6px;
+    font-size: medium;
+    font-weight: bold;
+    border-color: white;
+}
