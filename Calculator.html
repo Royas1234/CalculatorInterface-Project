@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,76 +8,117 @@
     <link type="text/css" rel="stylesheet" href="Calculator.css">
 </head>
 <body> 
-    <div id="container">
-        <h1>Basic Calculator</h1>
-    <div id="cal-body">
-    <div id="cal-display"></div>
-    <div id="cal-btns">
-        <table>
-             <tr class="Col-1">
-                <td>mc</td>
-                <td>m+</td>
-                <td>m-</td>
-                <td>mr</td>
-             </tr>
-            <tr class="Col-1">
-                <td>AC</td>
-                <td>√x</td>
-                 <td>%</td>
-             </class>
-                 <td class="Col-2">÷</class></td>
-            </tr>
-            <tr class="Col-3">
-                 <td>7</td>
-                <td>8</td>
-                <td>9</td>
-            </class> 
-                <td class="Col-2">x</td>
-                </class>
-            </tr>
-            <tr class="Col-3">
-                 <td>4</td>
-                 <td>5</td>
-                <td>6</td>
-            </class>
-                <td class="Col-2">- </class></td>
-            </tr>
-            <tr class="Col-3">
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-            </class>
-                <td class="Col-2">+</td>
-                 </class>
-            </tr>
-             <tr class="Col-3">
-                <td>0</td>
-                <td>.</td>
-                <td>+/-</td>
-            </class>
-                <td class="Col-2">=</class></td>
-            </tr>
-            <tr class="Col-1">
-                <td>π</td>
-                <td>X<sup>2</sup></td>
-                <td>R2</td>
-                <td>R0</td>
-                </class>
-                 </tr>
-        </table>
-    <div id="footer">
-        <p> &copy; Calculator<span class="Soup">Soup</span>  
-        </p> 
-    </div>  
-    </div>
-                    
-
-
-                
-
+        <div id="container">
+            <h1>Basic Calculator</h1>
+                <div id="cal-body">
+                    <input type="text"  id="result"  class="cal-display" placeholder="0">
+                        <div id="cal-btns">
+                            <table>
+                                <tr class="Col-1">
+                                    <td>
+                                         <button class="btn-S1"  value="mc"  onclick="display( 'mc' )">mc</button>
+                                    </td>
+                                     <td>
+                                        <button class="btn-S1"  value="m+"   onclick="display( 'm+' )">m+</button>
+                                    </td>
+                                    <td>
+                                        <button class="btn-S1"   value="m-" onclick="display( 'm-' )">m-</button>
+                                    </td>
+                                    <td>
+                                        <button class="btn-S1"   value="mr" onclick="display( 'm-' )">mr</button>
+                                    </td>
+                             </tr>
+                            <tr class="Col-1">
+                                 <td>
+                                    <button class="btn-S1"   value="AC" onclick="clearScreen( ' ' )" >AC</button>
+                                </td>
+                                <td>
+                                     <button class="btn-S1"   value="√x" onclick="squareRoot( '' )">√x</button>
+                                </td>
+                                <td>
+                                    <button class="btn-S1"    value="%" onclick="display( '%' )" >%</button>
+                                </td>
+                            <td class="Col-2">
+                                <button class="btn-S2"   value="÷" onclick="display( '÷' )">÷</button></td>
+                        </tr>
+                        <tr class="Col-3">
+                             <td>
+                                <button class="btn-S3"  value="7" onclick="display( '7' )">7</button>
+                            </td>
+                            <td>
+                                <button class="btn-S3"  value="8" onclick="display( '8' )">8</button>
+                            </td>
+                            <td>
+                                <button class="btn-S3"  value="9" onclick="display( '9' )">9</button>
+                            </td>
+                            <td class="Col-2">
+                                <button class="btn-S2"  value="*" onclick="display ( '*' )">*</button>
+                            </td>
+                        </tr>
+                        <tr class="Col-3">
+                            <td>
+                                <button class="btn-S3" value="4" onclick="display( '4' )">4</button>
+                            </td>
+                            <td>
+                                <button class="btn-S3"  value="5" onclick="display( '5' )">5</button>
+                            </td>
+                            <td>
+                                <button class="btn-S3"  value="6" onclick="display( '6' )">6</button>
+                            </td>
+                            <td class="Col-2">
+                                <button class="btn-S2"  value="-" onclick="display ('-' )">-</button>
+                            </td>
+                        </tr>
+                        <tr class="Col-3">
+                            <td>
+                                <button class="btn-S3"   value="1" onclick="display( '1' )">1</button>
+                            </td>
+                            <td>
+                                <button class="btn-S3"   value="2" onclick="display( '2')">2</button>
+                            </td>
+                            <td>
+                                <button class="btn-S3"  value="3" onclick="display( '3' )">3</button>
+                            </td>
+                            <td class="Col-2">
+                                <button class="btn-S2"  value="+" onclick="display( '+' )">+</button>
+                            </td>
+                        </tr>
+                        <tr class="Col-3">
+                            <td>
+                                <button class="btn-S3"   value="0" onclick="display( '0' )">0</button>
+                            </td>
+                            <td>
+                                <button class="btn-S3"   value="." onclick="display( '.' )">.</button>
+                            </td>
+                            <td>
+                                <button class="btn-S3"   value="+/-" onclick="display( '+/-' )">+/-</button>
+                            </td>
+                            <td class="Col-2">
+                                <button class="btn-S2"    value="=" onclick="equal()">=</button></td>
+                        </tr>
+                        <tr class="Col-1">
+                            <td>
+                                <button class="btn-S1"  value=" π" onclick="display(' π ')"> π</button>
+                            </td>
+                            <td>
+                            <button class="btn-S1"   value=" "  onclick="squareOf(' ')">X<sup>2</sup></button>
+                            </td>
+                            <td>
+                                <button class="btn-S1" value=" R0" onclick="display(' R0 ')"  >R0</button>
+                            </td>
+                            <td>
+                                <button class="btn-S1" value=" R2" onclick="display(' R2 ')">R2</button>
+                            </td>
+                        </tr>
+                    </table>
+                <div id="footer">
+                    <p> &copy; Calculator<span class="Soup">Soup</span>  
+                     </p> 
+            </div> 
+        </div>
 
             </div>
-     </div>>   
-
-</body>
-</html>
+        </div>
+    <script src="Calculator.js"></script>
+    </body>
+    </html>

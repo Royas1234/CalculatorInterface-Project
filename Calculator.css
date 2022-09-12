@@ -1,5 +1,5 @@
 body{
-    color: black;
+    color:black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;
 }
@@ -7,21 +7,30 @@ body{
     margin-left: 450px;
     margin-right: 450px;
     width: 900px;
+    
 }
 #cal-body{
     background-color: #ddd;
     width: 350px;
-    height: 500px;
+    height: 490px;
     border: 2px solid silver;
+    border-radius: 10px;
     
 
 }
-#cal-display{
+.cal-display{
     background-color: white;
     width: 300px;
     height: 50px;
     border: 2px solid silver;
-    margin: 20px 20px 5px 20px;
+    margin: 20px 20px 10px 20px;
+    text-align: right;
+    font-size: 30px;
+    padding-right: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-bottom: 1rem;
+
 }
 table{
     display: table;
@@ -37,11 +46,11 @@ tr{
 }
 
 td {
-    border: 1px solid #999;
     width:40px;
     height:40px;
     text-align: center;
     font-size: large;
+    border-radius: 5px;
 }
 .Col-1{
     background-color:#bbb;
@@ -54,11 +63,42 @@ td.Col-2{
 }
 #footer{
     text-align: right;
-    padding: 1px 5px 5px 1px; 
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     font-size: medium;
+    
 }
 .Soup{
     color: red;
+}
+.btn-S1{
+    background-color:#bbb;
+    cursor: pointer;
+    width: 67px;
+    font-size: medium;
+    font-weight: bold;
+    border-color: #999;
+    height: 44px;
+}
+.btn-S2{
+    background-color: yellow;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+    border-color: yellow;
+    width: 67px;
+    height:44px;
+}
+.btn-S3{
+    background-color: white;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+    border-color: white;
+    width: 67px;
+    height:44px;
+    color: black;
+}
+.btn-S1:hover{
+    background-color:#bbb;
 }
